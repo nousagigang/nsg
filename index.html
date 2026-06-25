@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nousagi Gang Media Hub</title>
+<meta name="description" content="Official media hub of Nousagi Gang. Access images, videos, documents, media kits, and community resources.">
+<meta name="keywords" content="Nousagi Gang, Gaming Community, MMORPG, Filipino Gamers, Media Hub">
+<meta name="author" content="Nousagi Gang">
+
+<meta property="og:title" content="Nousagi Gang Media Hub">
+<meta property="og:description" content="United by games. Bound by values. Di palulupig. Di pasisiil.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: '#e8590c',
+                dark: '#1a1a1a',
+                light: '#FFF7ED'
+            },
+            fontFamily: {
+                display: ['Orbitron', 'sans-serif'],
+                body: ['Inter', 'sans-serif']
+            }
+        }
+    }
+}
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#1a1a1a;
+}
+
+.neon-text{
+    text-shadow:
+    0 0 10px rgba(232,89,12,.6),
+    0 0 20px rgba(232,89,12,.4);
+}
+
+.neon-border{
+    box-shadow:
+    0 0 0 1px rgba(232,89,12,.4),
+    0 0 15px rgba(232,89,12,.15);
+}
+
+.glass{
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(12px);
+}
+
+.hero-overlay{
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(26,26,26,.75),
+        rgba(26,26,26,.92)
+    );
+}
+</style>
+</head>
+
+<body class="font-body text-light">
+
+<!-- BACK TO TOP -->
+<button id="backToTop"
+class="fixed bottom-6 right-6 z-50 bg-primary hover:scale-110 transition-all duration-300 text-white w-12 h-12 rounded-full shadow-lg hidden">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-40 bg-dark/90 backdrop-blur-md border-b border-primary/20">
+
+<div class="container mx-auto px-6 py-4">
+
+<!-- LOGO -->
+<div class="text-center">
+<h1 class="font-display text-2xl md:text-3xl font-bold neon-text text-primary">
+NOUSAGI GANG
+</h1>
+
+<p class="text-sm text-orange-100/80 mt-1">
+United by games. Bound by values. Di palulupig. Di pasisiil.
+</p>
+</div>
+
+<!-- MOBILE BUTTON -->
+<div class="md:hidden text-center mt-4">
+<button id="menuBtn" class="text-primary text-2xl">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+
+<!-- NAV -->
+<nav id="navMenu"
+class="hidden md:block mt-5">
+
+<ul class="flex flex-col md:flex-row justify-center gap-6 text-sm font-medium">
+
+<li><a href="#home" class="hover:text-primary transition">Home</a></li>
+<li><a href="#media" class="hover:text-primary transition">Media</a></li>
+<li><a href="#collections" class="hover:text-primary transition">Collections</a></li>
+<li><a href="#resources" class="hover:text-primary transition">Resources</a></li>
+<li><a href="#community" class="hover:text-primary transition">Community</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+<video
+autoplay
+muted
+loop
+playsinline
+class="absolute inset-0 w-full h-full object-cover">
+
+<source src="https://cdn.coverr.co/videos/coverr-neon-city-at-night-1561986027994?download=1080p" type="video/mp4">
+
+</video>
+
+<div class="absolute inset-0 hero-overlay"></div>
+
+<div class="relative z-10 max-w-4xl text-center px-6">
+
+<span class="inline-block px-4 py-2 rounded-full bg-primary/15 border border-primary/30 text-primary text-sm mb-6">
+Official Media Repository
+</span>
+
+<h2 class="font-display text-5xl md:text-7xl font-black mb-6 neon-text">
+NOUSAGI GANG
+</h2>
+
+<p class="text-lg md:text-xl text-orange-100/80 leading-relaxed max-w-2xl mx-auto">
+The official archive of Nousagi Gang media assets. Browse images, videos,
+documents, banners, promotional materials, and community resources built by and for our members.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+
+<a href="#media"
+class="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition">
+Browse Assets
+</a>
+
+<a href="YOUR_MAIN_WEBSITE_URL"
+class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl font-semibold transition">
+Go to Main Website
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="py-24">
+<div class="container mx-auto px-6">
+
+<div class="text-center mb-14">
+<h2 class="font-display text-4xl text-primary mb-4">
+Media Assets
+</h2>
+<p class="text-orange-100/70">
+Official visual and promotional materials.
+</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass neon-border rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/600/400?random=1" alt="Images" class="w-full h-56 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-3">Images</h3>
+<p class="text-orange-100/70">
+Official wallpapers, screenshots, event posters, member spotlights and visual content.
+</p>
+</div>
+</div>
+
+<div class="glass neon-border rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/600/400?random=2" alt="Videos" class="w-full h-56 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-3">Videos</h3>
+<p class="text-orange-100/70">
+Trailers, gameplay recordings, event highlights and community showcases.
+</p>
+</div>
+</div>
+
+<div class="glass neon-border rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/600/400?random=3" alt="Documents" class="w-full h-56 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-3">Documents</h3>
+<p class="text-orange-100/70">
+Guidelines, recruitment materials, archives and downloadable resources.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections" class="py-24 bg-black/20">
+<div class="container mx-auto px-6">
+
+<div class="text-center mb-14">
+<h2 class="font-display text-4xl text-primary">
+Featured Collections
+</h2>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8">
+
+<div class="glass rounded-2xl p-8 neon-border">
+<h3 class="text-2xl mb-3">Event Archives</h3>
+<p class="text-orange-100/70">
+Historical screenshots and media from community milestones and memorable campaigns.
+</p>
+</div>
+
+<div class="glass rounded-2xl p-8 neon-border">
+<h3 class="text-2xl mb-3">Brand Assets</h3>
+<p class="text-orange-100/70">
+Logos, banners, profile images and promotional materials ready for community use.
+</p>
+</div>
+
+<div class="glass rounded-2xl p-8 neon-border">
+<h3 class="text-2xl mb-3">Hall of Memories</h3>
+<p class="text-orange-100/70">
+Preserving moments, achievements and stories from our shared gaming journey.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="py-24">
+<div class="container mx-auto px-6">
+
+<div class="text-center mb-14">
+<h2 class="font-display text-4xl text-primary">
+Resources
+</h2>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="glass rounded-xl p-6 neon-border">
+<i class="fas fa-download text-primary text-3xl mb-4"></i>
+<h3 class="font-semibold mb-2">Downloads</h3>
+<p class="text-sm text-orange-100/70">
+Media packs and asset bundles.
+</p>
+</div>
+
+<div class="glass rounded-xl p-6 neon-border">
+<i class="fas fa-book text-primary text-3xl mb-4"></i>
+<h3 class="font-semibold mb-2">Guides</h3>
+<p class="text-sm text-orange-100/70">
+Community documentation.
+</p>
+</div>
+
+<div class="glass rounded-xl p-6 neon-border">
+<i class="fas fa-folder-open text-primary text-3xl mb-4"></i>
+<h3 class="font-semibold mb-2">Archives</h3>
+<p class="text-sm text-orange-100/70">
+Historical records and media.
+</p>
+</div>
+
+<div class="glass rounded-xl p-6 neon-border">
+<i class="fas fa-file-alt text-primary text-3xl mb-4"></i>
+<h3 class="font-semibold mb-2">Press Kit</h3>
+<p class="text-sm text-orange-100/70">
+Official branding materials.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- COMMUNITY -->
+<section id="community" class="py-24 bg-black/20">
+
+<div class="container mx-auto px-6 text-center">
+
+<h2 class="font-display text-4xl text-primary mb-6">
+Stay Connected
+</h2>
+
+<p class="max-w-2xl mx-auto text-orange-100/70 mb-10">
+Follow Nousagi Gang across our platforms and stay updated on community activities and releases.
+</p>
+
+<div class="flex justify-center gap-6 text-3xl">
+
+<a href="#" class="hover:text-primary transition">
+<i class="fab fa-discord"></i>
+</a>
+
+<a href="#" class="hover:text-primary transition">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="#" class="hover:text-primary transition">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="#" class="hover:text-primary transition">
+<i class="fab fa-github"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-primary/20 py-6">
+
+<div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+
+<p>
+© 2026 Nousagi Gang. All rights reserved.
+</p>
+
+<div class="flex gap-5">
+<a href="#" class="hover:text-primary">Discord</a>
+<a href="#" class="hover:text-primary">Facebook</a>
+<a href="#" class="hover:text-primary">YouTube</a>
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+// MOBILE MENU
+
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+
+menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+});
+
+// BACK TO TOP
+
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 400){
+        backToTop.classList.remove('hidden');
+    }else{
+        backToTop.classList.add('hidden');
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+});
+
+// CLOSE MOBILE MENU AFTER CLICK
+
+document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+        if(window.innerWidth < 768){
+            navMenu.classList.add('hidden');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
