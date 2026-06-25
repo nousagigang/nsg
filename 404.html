@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 — Archive Not Found | Nousagi Gang</title>
+
+<meta name="description" content="The requested archive could not be found. Return to the Nousagi Gang Media Hub.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: '#e8590c',
+                dark: '#1a1a1a',
+                light: '#FFF7ED'
+            },
+            fontFamily: {
+                display: ['Orbitron', 'sans-serif'],
+                body: ['Inter', 'sans-serif']
+            }
+        }
+    }
+}
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+body{
+    background:#1a1a1a;
+    overflow:hidden;
+}
+
+.grid-bg{
+    background-image:
+        linear-gradient(rgba(232,89,12,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,89,12,.08) 1px, transparent 1px);
+    background-size:40px 40px;
+}
+
+.glow{
+    text-shadow:
+    0 0 10px rgba(232,89,12,.7),
+    0 0 25px rgba(232,89,12,.5),
+    0 0 50px rgba(232,89,12,.3);
+}
+
+.panel{
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(232,89,12,.2);
+    box-shadow:
+    0 0 0 1px rgba(232,89,12,.15),
+    0 0 30px rgba(232,89,12,.08);
+}
+
+.glitch{
+    position:relative;
+}
+
+.glitch::before,
+.glitch::after{
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    overflow:hidden;
+}
+
+.glitch::before{
+    color:#ff7b00;
+    animation:glitch1 2s infinite;
+}
+
+.glitch::after{
+    color:#ffc078;
+    animation:glitch2 2s infinite;
+}
+
+@keyframes glitch1{
+    0%,100%{transform:translate(0);}
+    20%{transform:translate(-2px,2px);}
+    40%{transform:translate(-2px,-2px);}
+    60%{transform:translate(2px,2px);}
+    80%{transform:translate(2px,-2px);}
+}
+
+@keyframes glitch2{
+    0%,100%{transform:translate(0);}
+    25%{transform:translate(2px,-2px);}
+    50%{transform:translate(-2px,2px);}
+    75%{transform:translate(2px,2px);}
+}
+
+.scanline{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+    linear-gradient(
+        rgba(255,255,255,.03) 50%,
+        transparent 50%
+    );
+    background-size:100% 4px;
+    opacity:.15;
+}
+</style>
+
+</head>
+
+<body class="font-body text-light">
+
+<div class="absolute inset-0 grid-bg"></div>
+<div class="scanline"></div>
+
+<main class="relative min-h-screen flex items-center justify-center px-6">
+
+<div class="panel rounded-3xl p-10 md:p-14 max-w-3xl text-center">
+
+<div class="mb-8">
+
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 text-primary text-sm">
+<i class="fas fa-triangle-exclamation"></i>
+ACCESS FAILURE
+</span>
+
+</div>
+
+<h1
+class="glitch glow font-display text-7xl md:text-9xl font-black text-primary"
+data-text="404">
+404
+</h1>
+
+<h2 class="font-display text-2xl md:text-4xl mt-6 mb-4">
+ARCHIVE NOT FOUND
+</h2>
+
+<p class="text-orange-100/70 max-w-xl mx-auto leading-relaxed">
+The requested file, archive, or route does not exist in the Nousagi Gang repository.
+It may have been moved, renamed, deleted, or never existed in the first place.
+</p>
+
+<div class="mt-8 space-y-2 text-sm text-orange-100/60">
+
+<p>
+STATUS: <span class="text-primary">ERROR_404</span>
+</p>
+
+<p>
+NODE: <span class="text-primary">MEDIA_ARCHIVE</span>
+</p>
+
+<p>
+ACCESS LEVEL: <span class="text-primary">UNKNOWN</span>
+</p>
+
+</div>
+
+<div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+
+<a
+href="/"
+class="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300">
+
+<i class="fas fa-house mr-2"></i>
+Return Home
+
+</a>
+
+<button
+onclick="history.back()"
+class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300">
+
+<i class="fas fa-arrow-left mr-2"></i>
+Go Back
+
+</button>
+
+</div>
+
+<div class="mt-10 pt-6 border-t border-primary/15 text-xs text-orange-100/50">
+
+NOUSAGI GANG MEDIA HUB v1.0
+
+</div>
+
+</div>
+
+</main>
+
+</body>
+</html>
