@@ -1,4 +1,4 @@
-name: Import Rebuilding Day One Folder
+name: Import News Folder
 
 on:
   workflow_dispatch:
@@ -27,16 +27,16 @@ jobs:
 
       - name: Copy folder
         run: |
-          rm -rf screenshots/rebuilding-day-one
-          cp -R legacy/content/news/rebuilding-day-one screenshots/rebuilding-day-one/
+          rm -rf screenshots/back-and-rebuilding
+          cp -R legacy/content/news/back-and-rebuilding screenshots/back-and-rebuilding/
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add screenshots/rebuilding-day-one
+          git add screenshots/back-and-rebuilding
 
-          git commit -m "Import rebuilding-day-one folder from legacy repository" || echo "No changes to commit"
+          git commit -m "Import back-and-rebuilding folder from legacy repository" || echo "No changes to commit"
 
           git push origin HEAD:main
